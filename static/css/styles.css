@@ -48,8 +48,10 @@ body {
     max-width: 600px;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow: hidden; /* Hide any overflow */
+    height: 100%; /* Allow it to take the full height of its container */
 }
+
 
 .chat-header {
     padding: 1rem;
@@ -77,10 +79,12 @@ body {
     padding: 1rem;
     background-color: #f9fafb;
     flex: 1;
-    overflow-y: auto;
+    overflow-y: auto; /* Allow vertical scrolling */
+    max-height: 360px; /* Set a maximum height for the chat body */
     display: flex;
     flex-direction: column;
 }
+
 
 .bot-message,
 .user-message {
@@ -149,3 +153,18 @@ body {
     font-size: 0.9rem;
     color: #666;
 }
+
+.typing-indicator {
+    font-style: italic;
+    color: #888;
+    margin: 10px 0;
+}
+
+ul {
+}
+
+li {
+    margin-left: 20px; /* Adjusts the left padding for the entire list */
+    margin-top: 2px; /* Adds space between list items */
+}
+

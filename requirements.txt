@@ -9,4 +9,5 @@ langchain-text-splitters
 langchain-pinecone
 langchain-huggingface
 flask
+google-generativeai
 -e .
