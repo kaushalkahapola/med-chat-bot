@@ -166,3 +166,5 @@ cython_debug/
 model/llama-2-7b-chat.ggmlv3.q4_0.bin
 model/embedding_model.pkl
 data/*
+/research/
+/test/
