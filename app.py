@@ -43,7 +43,7 @@ vector_store = PineconeVectorStore(index=index, embedding=embeddings)
 
 retriever = vector_store.as_retriever(
     search_type="similarity_score_threshold",
-    search_kwargs={"k": 2, "score_threshold": 0.5}
+    search_kwargs={"k": 5, "score_threshold": 0.5}
 )
 
 prompt = PromptTemplate(template=prompt_template, input_variables=["previous_context","current_context","question"])
