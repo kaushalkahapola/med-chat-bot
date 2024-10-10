@@ -1,3 +1,5 @@
+# src/prompt.py
+
 prompt_template = """
 Use the following pieces of information to answer the user's question. Only add new information as needed to provide a complete and coherent response. 
 If you do not know the answer, kindly let the user know.
